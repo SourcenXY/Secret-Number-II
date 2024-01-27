@@ -44,7 +44,7 @@ function insertSecretNumber(){
         clear();
     }
     if(intents > maxInt){
-        console.log(`You do not discovered the secret number, reached the maximum number of intents, you only had ${maxInt} intents`);
+        alert(`You do not discovered the secret number, reached the maximum number of intents, you only had ${maxInt} intents`);
         initialConditional();
     }
     return;
