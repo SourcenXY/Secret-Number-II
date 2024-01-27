@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Number Secret</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__content">
+            <div class="container__information">
+                <div class="container__text">
+                    <h1 id="title"></h1>
+                    <p class="text__paragraph"></p>
+                </div>
+                <input type="number" min="1" max="10" class="container__input" id="insert" placeholder="Write a number">
+                <div class="container__buttons">
+                    <button onclick="insertSecretNumber()" class="container__button" id="attempt">Attempt</button>
+                    <button class="container__button" id="reset" disabled>New game</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="A person looking to the left" class="container__img-person">
+        </div>
+    </div>
+
+    <script src="./game.js" defer></script>
+</body>
+</html>
